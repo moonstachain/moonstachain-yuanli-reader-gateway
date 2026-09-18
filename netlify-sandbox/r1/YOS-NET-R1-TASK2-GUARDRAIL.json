@@ -1,0 +1,11 @@
+{
+  "schema": "yos.net.r1.task2-guardrail-receipt/v1",
+  "task_id": "YOS-NET-R1-T1",
+  "evaluator": "scripts/task2_uplift_evaluator.py",
+  "evaluator_result": {
+    "state": "BLOCKED",
+    "reason_code": "LATER_TASK_REQUIRED"
+  },
+  "interpretation": "Correct guardrail. Same-task pre/post improvement may support bounded current-task utility, but cannot prove Task2 reuse or compounding.",
+  "source_evidence_sha256": "6cfb117027f4f2bd03cdb2d4b506d26c7e1de643b10a70d3e1d4cc92354f3cce"
+}
