@@ -1,0 +1,109 @@
+{
+  "schema": "yos.net.r1.real-brain-context-packet/v1",
+  "program": "YOS-NET-R1",
+  "task_id": "YOS-NET-R1-T1",
+  "principal": "RAY",
+  "read_mode": "LOCAL_GBRAIN_PINNED_READ_ONLY",
+  "runtime": {
+    "gbrain_version": "0.42.57.0",
+    "engine": "pglite",
+    "source": "soul",
+    "indexed_pages": 1001,
+    "last_sync": "2026-09-16T10:11:52.013Z"
+  },
+  "evidence_bindings": [
+    {
+      "artifact": "gbrain-r1-raw.json",
+      "sha256": "0acac2dd5e1aff2c008dad88d38657679880281f926ed21eb696f91d7d4e71db",
+      "bytes": 25898,
+      "storage": "local_private_evidence"
+    },
+    {
+      "artifact": "gbrain-r1-task2-search.json",
+      "sha256": "3a193c70911290983392e302eee319b1a543d874de258afa10b2d2e4b613f683",
+      "bytes": 110834,
+      "storage": "local_private_evidence"
+    },
+    {
+      "artifact": "task2-evaluator-guardrail.json",
+      "sha256": "6cfb117027f4f2bd03cdb2d4b506d26c7e1de643b10a70d3e1d4cc92354f3cce",
+      "bytes": 1521,
+      "storage": "local_private_evidence"
+    }
+  ],
+  "retrieval_observation": {
+    "broad_composite_query_batch": {
+      "queries": 4,
+      "nonempty": 1,
+      "empty": 3,
+      "observed_hit_rate": 0.25
+    },
+    "bounded_atomic_query_batch": {
+      "queries": 4,
+      "nonempty": 4,
+      "empty": 0,
+      "observed_hit_rate": 1
+    },
+    "bounded_learning": "For this task, compile broad strategic questions into bounded atomic recall queries before retrieval. Do not infer knowledge absence from one composite-query miss."
+  },
+  "selected_context": [
+    {
+      "source_id": "soul",
+      "slug": "manuscript/00-总论-ai时代为什么需要原力战略-正文-v0.2",
+      "title": "总论：AI 时代，为什么需要原力战略？",
+      "score": 0.8969245453361903,
+      "stale": false,
+      "claim_used": "一次输出应成为下一次输入；一次性的工作不会让系统变强。"
+    },
+    {
+      "source_id": "soul",
+      "slug": "prompts/web-gpt-cold-start-v1",
+      "title": "WEB-GPT-COLD-START-v1",
+      "score": 0.8882118659172729,
+      "stale": false,
+      "effective_date": "2026-09-16",
+      "claim_used": "Built != Validated; Learning document != Reuse; Remembered != Compounding; 没有第二真实任务事前加载不得声称 Reuse / Compounding。"
+    },
+    {
+      "source_id": "soul",
+      "slug": "pilots/trilogy/full-cycle-001/90-day-runbook",
+      "title": "Full Trilogy Pilot 001：苹果妈妈90天执行作战单",
+      "score": 0.8815221754082309,
+      "stale": false,
+      "effective_date": "2026-09-16",
+      "claim_used": "必须在后续独立 Task2 明确加载获批规则并提交 Reuse Receipt，才有资格裁决复用。"
+    },
+    {
+      "source_id": "soul",
+      "slug": "pilots/productization/first-delivery-001/runbook",
+      "title": "首轮原力战略体检真实交付 Runbook v1",
+      "score": 0.8358090923506412,
+      "stale": false,
+      "effective_date": "2026-09-16",
+      "claim_used": "Task2 前冻结 approved learning；留下 Task2LoadReceipt；使用可比较指标；记录不可比因素；由有权人裁决。没有 Load Receipt，compounding 保持 missing。"
+    },
+    {
+      "source_id": "soul",
+      "slug": "docs/cases/旧物造原力os黄金切片预演-v1.1",
+      "title": "旧物造原力Os黄金切片预演 V1.1",
+      "score": 0.8670592765031465,
+      "stale": false,
+      "effective_date": "2026-08-06",
+      "claim_used": "阈值必须在 Task1 前冻结；系统学习结果与业务结果分开；复用完成不等于业务假设被证明。"
+    }
+  ],
+  "authority_envelope": {
+    "read": true,
+    "propose": true,
+    "write": false,
+    "act": false
+  },
+  "claims_not_made": [
+    "live_netlify_to_gbrain_connectivity",
+    "external_client_interoperability",
+    "business_outcome_uplift",
+    "reuse_proven",
+    "compounding_proven",
+    "general_os_self_improvement"
+  ]
+}
