@@ -1,0 +1,21 @@
+{
+  "schema": "yos.net.r1.next-task-preload-candidate/v1",
+  "candidate_id": "NET-R1-LRN-001",
+  "status": "CANDIDATE_NOT_YET_REUSED",
+  "source_task_id": "YOS-NET-R1-T1",
+  "principal": "RAY",
+  "scope": "governed-brain-retrieval",
+  "learning": [
+    "Compile broad strategic questions into bounded atomic recall queries before GBrain retrieval.",
+    "Reuse existing Yuanli Task2/Reuse governance instead of inventing project-local compounding criteria.",
+    "Treat same-task before/after improvement as current-task utility, not Reuse/Compounding."
+  ],
+  "future_task_requirements": {
+    "loaded_before_task": true,
+    "task2_load_receipt": true,
+    "later_independent_task": true,
+    "comparable_metrics": true,
+    "non_comparable_factors_recorded": true,
+    "human_adjudication": true
+  }
+}
