@@ -1,0 +1,8 @@
+{
+  "name": "yuanli-netlify-reality-sandbox",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "@netlify/functions": "latest"
+  }
+}
