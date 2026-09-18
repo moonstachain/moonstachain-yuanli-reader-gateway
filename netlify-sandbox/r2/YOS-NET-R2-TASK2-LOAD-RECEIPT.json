@@ -1,0 +1,39 @@
+{
+  "schema": "yos.net.r2.task2-load-receipt/v1",
+  "task_id": "YOS-NET-R2-T1",
+  "source_task_id": "YOS-NET-R1-T1",
+  "loaded_before_task": true,
+  "loaded_at": "2026-09-18T14:21:00+08:00",
+  "principal": "RAY",
+  "candidate_id": "NET-R1-LRN-001",
+  "candidate_source_path": "netlify-sandbox/r1/YOS-NET-R1-NEXT-TASK-PRELOAD-CANDIDATE.json",
+  "candidate_blob_sha": "12baedb3f4f83fe422cf0085dd11cdf3dbdc2a11",
+  "scope": "preview-human-gate-promotion",
+  "learning_loaded": [
+    "Compile broad strategic questions into bounded atomic recall queries before GBrain retrieval.",
+    "Reuse existing Yuanli Task2/Reuse governance instead of inventing project-local compounding criteria.",
+    "Treat same-task before/after improvement as current-task utility, not Reuse/Compounding."
+  ],
+  "frozen_success_criteria": [
+    "A non-production Netlify deploy is created with a unique preview URL.",
+    "Preview build/deploy state is ready with no production deploy mutation.",
+    "Preview removes the legacy /yuanli-context bypass while preserving governed /mcp.",
+    "Preview evidence is reviewed before any production promotion.",
+    "Promotion requires explicit Human Gate after preview URL and checks are available."
+  ],
+  "frozen_failure_conditions": [
+    "Any production deploy changes before explicit promotion approval.",
+    "Preview is actually production context.",
+    "Legacy /yuanli-context remains exposed in the candidate preview.",
+    "Governed /mcp route is missing or auth boundary is weakened.",
+    "Evidence is incomplete but promotion is attempted."
+  ],
+  "non_comparable_factors_to_record": [
+    "CLI OAuth state",
+    "Netlify network availability",
+    "manual-upload deploy versus Git-connected deploy",
+    "site-level SSO behavior on preview URLs"
+  ],
+  "adjudication": "HUMAN_REQUIRED",
+  "status": "LOADED_BEFORE_R2_ACTION"
+}

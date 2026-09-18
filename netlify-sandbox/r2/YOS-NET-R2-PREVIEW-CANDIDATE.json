@@ -1,0 +1,24 @@
+{
+  "schema": "yos.net.r2.preview-candidate/v1",
+  "task_id": "YOS-NET-R2-T1",
+  "candidate_id": "NET-R2-PREVIEW-001",
+  "source_branch": "exp/net-r2-preview-gate",
+  "base_production_deploy_id": "6aacc13a48646f1e45068933",
+  "expected_deploy_context": "deploy-preview-or-draft",
+  "production_must_remain": "6aacc13a48646f1e45068933",
+  "expected_routes": {
+    "/mcp": "present_and_governed",
+    "/yuanli-context": "absent"
+  },
+  "expected_static_marker": "R2_PREVIEW_CANDIDATE",
+  "promotion_policy": "explicit_human_gate_after_preview_evidence",
+  "claims_before_preview": [
+    "candidate_source_prepared"
+  ],
+  "claims_not_yet_allowed": [
+    "preview_ready",
+    "promotion_safe",
+    "production_promoted",
+    "r1_learning_reused"
+  ]
+}
