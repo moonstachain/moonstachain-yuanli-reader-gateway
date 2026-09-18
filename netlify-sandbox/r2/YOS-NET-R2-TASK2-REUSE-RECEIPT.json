@@ -1,0 +1,24 @@
+{
+  "schema": "yos.net.r2.task2-reuse-receipt/v1",
+  "task_id": "YOS-NET-R2-T1",
+  "source_task_id": "YOS-NET-R1-T1",
+  "candidate_id": "NET-R1-LRN-001",
+  "preload_receipt": "netlify-sandbox/r2/YOS-NET-R2-TASK2-LOAD-RECEIPT.json",
+  "loaded_before_task": true,
+  "applied_in_task": true,
+  "evidence": {
+    "reused_existing_task2_governance": true,
+    "task2_load_receipt_created_before_action": true,
+    "success_failure_criteria_frozen_before_preview": true,
+    "non_comparable_factors_recorded": true,
+    "same_task_compounding_claim_avoided": true,
+    "real_preview_created": true,
+    "production_unchanged": true
+  },
+  "preview_deploy_id": "6aacda5026d8e612e4ea5ae3",
+  "production_baseline_id": "6aacc13a48646f1e45068933",
+  "current_state": "LOADED_AND_APPLIED_PENDING_HUMAN_ADJUDICATION",
+  "human_adjudication": null,
+  "reuse_claim_allowed": false,
+  "compounding_claim_allowed": false
+}
