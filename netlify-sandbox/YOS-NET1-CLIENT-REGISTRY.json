@@ -1,0 +1,43 @@
+{
+  "schema": "yos.net1.client-registry.v1",
+  "endpoint": "/mcp",
+  "auth_scheme": "Bearer + X-Yuanli-Client",
+  "clients": [
+    {
+      "client_id": "ray-primary",
+      "status": "ADMITTED_READ_ONLY",
+      "scopes": [
+        "mcp:read"
+      ],
+      "secret_authority": {
+        "provider": "1password",
+        "vault": "Yuanli-Secret-Authority",
+        "item_id": "nfeeoxk4cw4fasxf55emv7f6tq",
+        "raw_secret_in_source": false
+      },
+      "verifier": {
+        "algorithm": "sha256",
+        "value": "d74949fe78dfb3ce4c8acdbc2668d89adcdb41a12f271f5ae4b73b9aa3cec5ea"
+      },
+      "authorities": {
+        "canon_write": false,
+        "knowledge_promotion": false,
+        "decision": false,
+        "action_write": false,
+        "secret_readthrough": false
+      }
+    }
+  ],
+  "controls": {
+    "rate_limit": {
+      "window_seconds": 60,
+      "limit": 10,
+      "aggregate_by": [
+        "ip",
+        "domain"
+      ]
+    },
+    "audit_schema": "yos.net1.auth.audit.v1",
+    "site_sso": true
+  }
+}
