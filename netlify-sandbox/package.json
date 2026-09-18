@@ -1,0 +1,10 @@
+{
+  "name": "yuanli-netlify-reality-sandbox",
+  "private": true,
+  "version": "0.2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "@netlify/functions": "latest",
+    "zod": "latest"
+  }
+}
